@@ -1,10 +1,20 @@
-pipeline{
-  agent any
-  stages{
-    stages('Build'){
-      steps{
-        bat 'javac -version'
-      }
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Build') {
+
+            steps{
+
+                bat 'javac -version'
+
+            }
+
+        }
+
     }
-  }
+
 }
+ 
